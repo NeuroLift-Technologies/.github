@@ -208,7 +208,9 @@ check_file_exists "docs/active-threads.md"             "docs/active-threads.md (
 check_file_not_empty "docs/active-threads.md"          "docs/active-threads.md"
 check_file_exists "docs/agent-log/README.md"           "docs/agent-log/README.md"
 check_dir_exists  "docs/agent-log/registrations"       "docs/agent-log/registrations"
+check_file_exists "docs/agent-log/registrations/.gitkeep" "docs/agent-log/registrations/.gitkeep"
 check_dir_exists  "docs/agent-log/handoffs"            "docs/agent-log/handoffs"
+check_file_exists "docs/agent-log/handoffs/.gitkeep"   "docs/agent-log/handoffs/.gitkeep"
 
 # ── Tier 2: Templates ─────────────────────────────────────────────────────────
 section "Tier 2 — Governance Templates"
