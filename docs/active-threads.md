@@ -1,6 +1,6 @@
 # Active Threads — NeuroLift-Technologies/.github
 > OTOI §4.1 Step 4 · Read before starting any work to avoid conflicts
-> Last updated: 2025-04-04
+> Last updated: 2026-04-04
 
 ---
 
