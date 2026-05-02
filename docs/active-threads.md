@@ -1,6 +1,6 @@
 # Active Threads — NeuroLift-Technologies/.github
 > OTOI §4.1 Step 4 · Read before starting any work to avoid conflicts
-> Last updated: 2026-04-04
+> Last updated: 2026-05-02
 
 ---
 
@@ -22,19 +22,7 @@ This file tracks all **current and recently completed** work threads in this rep
 
 <!-- Add new threads here. One entry per thread. -->
 
-### THREAD-001 — Governance File Bootstrap
-| Field | Value |
-|-------|-------|
-| **Thread ID** | THREAD-001 |
-| **Status** | 🟡 In Progress |
-| **Started** | 2025-04-04 |
-| **Owner** | Pending assignment |
-| **Branch** | `copilot/sync-governance-public-files` |
-| **Task** | Create and populate all initial governance files for the `.github` public repo as part of the `sync-governance-public.yml` workflow bootstrap |
-| **Scope** | `CLAUDE.md`, `AGENTS.md`, `docs/`, `templates/`, `SOPs/`, `ISSUE_TEMPLATE/agent-escalation.md`, `ISSUE_TEMPLATE/governance-proposal.md`, `.nltotoi/` |
-| **Blockers** | None |
-| **Related PR** | TBD |
-| **Notes** | This is the initial governance bootstrap. No prior governance infrastructure exists in this repo. |
+*No active threads currently.*
 
 ---
 
@@ -42,7 +30,15 @@ This file tracks all **current and recently completed** work threads in this rep
 
 <!-- Move threads here when closed. Retain for 30 days after completion. -->
 
-*No completed threads yet.*
+### THREAD-001 — Governance File Bootstrap
+| Field | Value |
+|-------|-------|
+| **Thread ID** | THREAD-001 |
+| **Status** | ✅ Complete |
+| **Completed** | 2026-04-25 |
+| **Owner** | Codex |
+| **Branch** | `workspace` |
+| **Summary** | Governance bootstrap/sync completed: core governance files, templates, SOPs, issue templates, validation workflow, and governance agent artifacts were synchronized and validated per handoff `2026-04-25-codex-governance-core-sync-handoff.json`. |
 
 ---
 
