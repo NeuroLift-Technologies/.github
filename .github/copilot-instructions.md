@@ -65,6 +65,31 @@ Edit synced files in `.github-private` only; changes propagate via `sync-governa
 
 Each individual NLT repo contains a thin `CLAUDE.md` stub that points agents to both governance repos.
 
+### Key Directories in This Repo
+
+| Path | Contents |
+|---|---|
+| `agents/` | GitHub Copilot custom agent profiles (`.md` with required NLT frontmatter) |
+| `templates/` | Governance artifact templates (registration, handoff, escalation, intent log) |
+| `SOPs/` | Standard operating procedures (onboarding, repo setup, incident response) |
+| `docs/active-threads.md` | Live work-state baton board — read before starting any task |
+| `docs/agent-log/` | Agent registration and handoff records |
+| `.nltotoi/` | Governance validation namespace (validation script, file registry) |
+
+## Governance Validation
+
+Run the governance validation script locally to check that a repo has all required OTOI-compliant files:
+
+```bash
+bash .nltotoi/scripts/validate-governance.sh
+```
+
+Options:
+- `--strict` — treat warnings as errors (exits 1 on any warning)
+- `--repo-root PATH` — validate a different directory than the current git root
+
+This script is also run in CI via `validate-governance.yml` on every push and pull request.
+
 ## Reusable CI Workflow
 
 NLT repos use the shared CI workflow via:
@@ -108,6 +133,28 @@ When writing governance artifacts to a repo:
 - Active thread tracking: `docs/active-threads.md`
 
 Use the templates in `templates/` (from `.github-private`) for these records.
+
+## Agent Profiles (`agents/`)
+
+Agent profile files in `agents/*.md` **must** include the following frontmatter fields exactly:
+
+```yaml
+---
+name: [agent name]
+description: [one-line purpose]
+version: [semver, e.g. 1.0.0]
+nlt-otoi-version: ORG-DEV-OTOI-1.0.0
+nlt-solidarity-framework: true
+nlt-haief: true
+nlt-authority: Joshua W. Dorsey, Sr.
+---
+```
+
+The system prompt must reference `ORG-DEV-OTOI-1.0.0`, include escalation guidance, and align with Solidarity Framework principles. It must never suggest unilateral architectural decisions or credential storage.
+
+## MCP Server Configuration
+
+`mcp-config.yaml` (repo root) defines org-wide MCP server endpoints for AI tools. It includes GitHub MCP and Cloudflare MCP servers (docs, bindings, observability, radar, etc.). Credentials are loaded from environment variables — never commit `.env` files. Clients without native HTTP transport support can use `mcp-remote` as a bridge (see the fallback section at the bottom of that file).
 
 ## Pull Requests
 
