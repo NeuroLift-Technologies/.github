@@ -1,28 +1,14 @@
 # GitHub Copilot Instructions for NeuroLift Technologies
 
-These instructions apply to all repositories in the NeuroLift Technologies organization.
-
-## Governance Framework (OTOI)
-
-All NLT repositories operate under **ORG-DEV-OTOI-1.0.0** — the organization-wide coding agent contract.
-
-**Session start protocol (mandatory for significant work):**
-1. Read `NLT-DEV-OTOI.md` (canonical contract, lives in `.github-private`)
-2. Read the repo-level `CLAUDE.md` (project context)
-3. Read `docs/active-threads.md` (current work state, if present)
-
-**Final authority:** Joshua W. Dorsey, Sr. Escalate rather than guess on any architectural, deployment, UX, or strategic decision. Use `templates/escalation.md`.
-
-**Escalate immediately when:**
-- Task scope is unclear or conflicts with existing work
-- An architectural or deployment decision is required (database, framework, infra)
-- A blocker cannot be resolved by the agent
-- An ethical concern arises
-- LLM provider or external service selection is needed
+These instructions apply to AI agents contributing to **public** NeuroLift
+Technologies repositories. They mirror, for agents, what
+[`CONTRIBUTING.md`](../CONTRIBUTING.md) provides for humans. See
+[`AGENTS.md`](../AGENTS.md) for the full agent contributor guide and
+[`GOVERNANCE.md`](../GOVERNANCE.md) for the principles behind these rules.
 
 ## Commit Format
 
-All agent commits **must** follow this format — enforced by CI:
+All agent commits **must** follow this format:
 
 ```
 [AGENT_NAME] type(scope): description
@@ -37,37 +23,28 @@ Examples:
 [COPILOT] docs(readme): clarify deployment prerequisites
 ```
 
-> **Fork PR exception:** The commit format check is automatically skipped for PRs from forked repositories.
+> **Fork PR exception:** The commit-format check is automatically skipped for PRs
+> from forked repositories.
 
-## Non-Negotiable Guardrails
+## Guardrails
+
+These keep contributions safe to merge:
 
 | Guardrail | Rule |
 |---|---|
-| No LLM provider lock-in | Never hardcode or commit to a specific LLM provider without Joshua's approval |
-| No architecture decisions | Database, deployment, and framework choices require human sign-off |
-| No production deployments | Human must explicitly approve all production actions |
-| No credential storage | Never store secrets, tokens, or credentials in code or VCS |
-| No external integrations | Third-party service connections require Joshua's approval |
-| No OTOI self-amendment | Governance docs (`NLT-DEV-OTOI.md`, `AGENTS.md`, SOPs) cannot be changed by agents |
+| Stay provider-neutral | Don't hardcode or lock in a specific LLM / AI provider |
+| Leave the big calls to maintainers | Database, deployment, and framework choices need maintainer sign-off |
+| No production deployments | A maintainer must explicitly approve any production action |
+| No credential storage | Never commit secrets, tokens, or credentials |
+| Keep integrations minimal | New third-party integrations need maintainer sign-off |
+| One change per PR | Keep pull requests focused and reviewable |
 
-## Repository Architecture
-
-NLT uses a **two-repo governance model**:
-
-- **`NeuroLift-Technologies/.github`** (public) — org profile, community health files, default issue/PR templates, Copilot instructions, reusable CI workflows
-- **`NeuroLift-Technologies/.github-private`** (private) — canonical OTOI contract, agent templates, SOPs, escalation formats, internal procedures
-
-Files synced from `.github-private` are marked with:
-```
-<!-- SYNCED FROM .github-private — do not edit directly -->
-```
-Edit synced files in `.github-private` only; changes propagate via `sync-governance-public.yml`.
-
-Each individual NLT repo contains a thin `CLAUDE.md` stub that points agents to both governance repos.
+When a task is ambiguous or would cross a guardrail, **open a GitHub issue** using
+the Agent Escalation template and pause that work until a maintainer responds.
 
 ## Reusable CI Workflow
 
-NLT repos use the shared CI workflow via:
+NLT public repos can use the shared CI workflow via:
 
 ```yaml
 # .github/workflows/ci.yml in any NLT repo
@@ -81,7 +58,9 @@ jobs:
       python-version: '3.12'
 ```
 
-The reusable workflow runs `ruff check .` for Python lint and `npm run lint` + `npm test` for Node/TS projects, auto-detecting which applies based on file presence.
+The reusable workflow runs `ruff check .` for Python lint and `npm run lint` +
+`npm test` for Node/TS projects, auto-detecting which applies based on file
+presence.
 
 ## Coding Standards
 
@@ -90,28 +69,15 @@ The reusable workflow runs `ruff check .` for Python lint and `npm run lint` + `
 - Prefer `dataclasses` or `pydantic` models for structured data
 - Google-style docstrings
 - Lint: `ruff check .` | Test: `python -m pytest --tb=short`
-- Run a single test: `python -m pytest path/to/test_file.py::test_function_name`
 
 **TypeScript/JavaScript**
 - Strict TypeScript types; prefer functional patterns; `const` over `let`
 - JSDoc for public APIs
 - Lint: `npm run lint` | Test: `npm test` (vitest or jest)
-- Run a single test: `npx vitest run path/to/test.spec.ts` or `npx jest path/to/test.spec.ts`
-
-## Agent Records & File Naming
-
-When writing governance artifacts to a repo:
-
-- Agent registrations: `docs/agent-log/registrations/{YYYY-MM-DD}-{agent-name}-{session-id}.json`
-- Handoff records: `docs/agent-log/handoffs/{YYYY-MM-DD}-{session-id}.json`
-- Escalation records: `docs/escalations/`
-- Active thread tracking: `docs/active-threads.md`
-
-Use the templates in `templates/` (from `.github-private`) for these records.
 
 ## Pull Requests
 
-- Fill in the PR template fully, including the agent contribution checklist
-- Reference the related issue number
+- Fill in the agent contribution PR template fully
+- Reference the related issue number, if any
 - Keep PRs focused — one feature or fix per PR
-- Ensure `docs/active-threads.md` is updated and a handoff record is written before the session ends
+- Add or update tests for your change
