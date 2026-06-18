@@ -16,7 +16,7 @@ Ethical Integration Framework):
 - **Accountable** — significant or irreversible decisions are made by
   maintainers, not assumed by contributors.
 
-Learn more: https://elevaitionfoundation.org
+Learn more: https://neurolift-technologies.github.io/haief/
 
 ## Contributor guardrails
 
@@ -37,6 +37,7 @@ These apply to every contribution, human or agent:
 
 ## Contributing
 
-- Human contributors: [`CONTRIBUTING.md`](CONTRIBUTING.md)
-- AI agent contributors: [`AGENTS.md`](AGENTS.md)
+- Full contract (humans & agents): [`CONTRIBUTING.md`](CONTRIBUTING.md) — *How We Govern*
+- AI agent companion: [`AGENTS.md`](AGENTS.md)
+- Machine-readable contract: [`governance.yaml`](governance.yaml) / [`governance.json`](governance.json)
 - Report a security concern: [`SECURITY.md`](SECURITY.md)

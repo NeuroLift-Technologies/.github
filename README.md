@@ -1,5 +1,26 @@
 # .github — NeuroLift Technologies Organization Configuration
 
+```yaml
+ai_assistant_directive:
+  priority: 1
+  instruction: "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json)."
+  description: "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository."
+  required_files: ["CONTRIBUTING.md", "governance.yaml", "governance.json"]
+  document_id: "ORG-DEV-OTOI-1.0.2"
+```
+
+```json
+{
+  "ai_assistant_directive": {
+    "priority": 1,
+    "instruction": "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json).",
+    "description": "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository.",
+    "required_files": ["CONTRIBUTING.md", "governance.yaml", "governance.json"],
+    "document_id": "ORG-DEV-OTOI-1.0.2"
+  }
+}
+```
+
 This repository is the central configuration hub for all repositories in the **NeuroLift Technologies** GitHub organization. GitHub treats this repository specially, using its contents as organization-wide defaults.
 
 ## What's in This Repository
