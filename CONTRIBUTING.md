@@ -44,7 +44,7 @@ Every session runs the same loop. The order matters — each step sets up the ne
 
 1. **Read the contract** — `ORG-DEV-OTOI-1.0.2` (this document).
 2. **Read the repo's `CLAUDE.md`** — repo-level context, if present.
-3. **Read `active-threads.md`** — what's open, blocked, or in motion right now, if the repo maintains one.
+3. **Read `docs/active-threads.md`** — what's open, blocked, or in motion right now. Every NLT repo maintains one; if a repo doesn't have it yet, add it (see the format in [`docs/active-threads.md`](docs/active-threads.md)).
 4. **Register your session** — agent, platform, version, entry point, scope.
 5. **Confirm scope with the human** — before beginning significant work.
 6. **Work on a feature branch → open a PR** — never directly to `main` or a protected branch.

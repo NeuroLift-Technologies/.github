@@ -42,7 +42,7 @@ governance_contract:
   session_lifecycle:
     - "Read the contract (ORG-DEV-OTOI-1.0.2 — this document)."
     - "Read the repo's CLAUDE.md, if present."
-    - "Read active-threads.md (if the repo maintains one) — what's open, blocked, or in motion."
+    - "Read docs/active-threads.md — what's open, blocked, or in motion (every repo maintains one; add it if missing)."
     - "Register your session (agent, platform, version, entry point, scope)."
     - "Confirm scope with the human before significant work."
     - "Work on a feature branch and open a pull request."
