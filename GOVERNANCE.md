@@ -16,7 +16,7 @@ Ethical Integration Framework):
 - **Accountable** — significant or irreversible decisions are made by
   maintainers, not assumed by contributors.
 
-Learn more: https://elevaitionfoundation.org
+Learn more: https://neurolift-technologies.github.io/haief/
 
 ## Contributor guardrails
 

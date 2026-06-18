@@ -3,7 +3,7 @@
 The rules — and the spirit — that every contributor works under inside a NeuroLift Technologies repository. Human or agent. Internal or external. **The same contract for all of us.**
 
 > **Machine-readable version:** [`governance.yaml`](governance.yaml) · [`governance.json`](governance.json) — agents should parse these first.
-> **Contract:** `ORG-DEV-OTOI-1.0.2` · **Maintained by** Joshua W. Dorsey, Sr. · **Governed by** the Solidarity Framework & HAIEF ([elevaitionfoundation.org](https://elevaitionfoundation.org))
+> **Contract:** `ORG-DEV-OTOI-1.0.2` · **Maintained by** Joshua W. Dorsey, Sr. · **Governed by** the Solidarity Framework & HAIEF ([neurolift-technologies.github.io/haief](https://neurolift-technologies.github.io/haief/))
 
 These guidelines apply to all repositories in the **NeuroLift Technologies** organization unless a repository provides its own `CONTRIBUTING.md`. The agent-facing companion is [`AGENTS.md`](AGENTS.md); the principles behind it all are in [`GOVERNANCE.md`](GOVERNANCE.md).
 
