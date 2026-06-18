@@ -10,7 +10,7 @@ Each repository in the NeuroLift Technologies organization maintains its own lis
 
 If you discover a security vulnerability in any NeuroLift Technologies project, please report it responsibly:
 
-1. **Email**: Send details to `security@neurolift-technologies.com` <!-- Update this address before going public -->
+1. **Email**: Send details to `admin@neuroliftsolutions.com`
 2. **GitHub Private Vulnerability Reporting**: Use the "Report a vulnerability" button on the affected repository's **Security** tab.
 
 ### What to Include

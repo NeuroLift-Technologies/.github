@@ -1,55 +1,36 @@
-## Agent Contribution Checklist
+## Agent Contribution
 
-**Agent:** [Name / platform]  
-**Session:** [Branch / session ID]  
-**Governed by:** ORG-DEV-OTOI-1.0.0  
+**Agent:** [Name / platform]
+**Branch:** [feature/...]
 **Working repo:** [Repository name]
 
 ---
 
 ### Before Merging
 
-- [ ] Governance validation script passed (`bash .nltotoi/scripts/validate-governance.sh`)
-- [ ] `docs/active-threads.md` updated with current state
-- [ ] Handoff record written to `docs/agent-log/handoffs/` using `templates/handoff-record.json`
-- [ ] Escalations resolved or documented in `docs/escalations/`
-- [ ] No LLM provider locked in without Joshua's approval
-- [ ] No architecture decisions made without Joshua's approval
-- [ ] No production credentials or secrets committed
-- [ ] No external service integrations added without Joshua's approval
+- [ ] Change is focused — one feature or fix in this PR
+- [ ] Tests added or updated for the change (or N/A, explained below)
+- [ ] No secrets, credentials, or API keys committed
+- [ ] No LLM / AI provider hardcoded without maintainer sign-off
+- [ ] No architecture decision or external integration made unilaterally
+      (propose it in the description instead)
+- [ ] Anything ambiguous was raised via an Agent Escalation issue, linked below
 
 ---
 
 ### Scope Declaration
 
-<!-- REQUIRED if this PR adds any new top-level directory or 15+ new files.
-     The `pr-scope-check` CI workflow will fail if a new top-level directory
-     is not mentioned somewhere in this PR description. -->
+<!-- REQUIRED if this PR adds any new top-level directory or a large batch of files.
+     Reviewers should not be surprised by new top-level directories. -->
 
-- [ ] **No new top-level directories added** — OR each new directory is explicitly documented below
-- [ ] **Fewer than 15 new files added** — OR the large batch of additions is explained below
+- [ ] **No new top-level directories added** — OR each new directory is documented below
+- [ ] **No large unexplained file batches** — OR the additions are explained below
 
-**New top-level directories (if any):**
-
-<!--
-List every new top-level directory added and explain:
-  - What it contains
-  - Why it is being added in this PR
-  - How it relates to the stated goal of the PR
-
-Example:
-  - `agents-templates/` — copied in from JDUB1216/awesome-copilot as reference scaffolding
-    for the SOP automation workflows; provides the skill and instruction templates that the
-    new GitHub Actions workflows reference.
-
-If no new directories are added, write "None."
--->
-
-None.
+**New top-level directories (if any):** None.
 
 ---
 
-### Commit Format Used
+### Commit Format
 
 All commits in this PR follow: `[AGENT_NAME] type(scope): description`
 
@@ -57,30 +38,20 @@ All commits in this PR follow: `[AGENT_NAME] type(scope): description`
 
 ### Changes Summary
 
-<!-- Full description of what this PR changes and why. Include:
-     - Files and directories added, modified, or deleted
-     - Key changes with brief explanations
-     - Any architectural or design decisions made
-     Be specific — reviewers should be able to understand the complete scope
-     of changes from this section alone. -->
+<!-- What this PR changes and why. Be specific enough that a reviewer can
+     understand the full scope from this section alone. -->
 
 ---
 
 ### Tests
 
-- [ ] Existing tests pass (or N/A — document why)
-- [ ] New tests added for new functionality (or N/A — document why)
+- [ ] Existing tests pass (or N/A — explain why)
+- [ ] New tests added for new functionality (or N/A — explain why)
 
 ---
 
-### Escalations
+### Related Issues
 
-<!-- List any escalations raised during this session and their resolution status -->
+<!-- Link any Agent Escalation issue or other related issues -->
 
-None / [Description]
-
----
-
-### Handoff Notes
-
-<!-- What does the next agent or reviewer need to know about this PR? -->
+None / #[issue]
