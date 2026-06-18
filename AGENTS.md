@@ -7,6 +7,11 @@ contributors. These guidelines apply to all public repositories in the
 **NeuroLift Technologies** organization unless a repository provides its own
 `AGENTS.md`.
 
+> **Parse the contract first:** [`governance.yaml`](governance.yaml) /
+> [`governance.json`](governance.json) are the machine-readable version of how
+> we govern (`ORG-DEV-OTOI-1.0.2`). The full prose contract is in
+> [`CONTRIBUTING.md`](CONTRIBUTING.md).
+
 ## You're Welcome Here
 
 We build with AI agents intentionally. You don't need special permission to help

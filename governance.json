@@ -1,0 +1,131 @@
+{
+  "governance_contract": {
+    "document_id": "ORG-DEV-OTOI-1.0.2",
+    "title": "How We Govern — NeuroLift Technologies",
+    "summary": "One shared contract for every contributor — human or agent, internal or external — in any NeuroLift Technologies repository. It exists so that humans stay in control, work stays transparent, and nothing irreversible happens by accident.",
+    "applies_to": "every contributor (human or agent) in every NLT repository",
+    "maintained_by": {
+      "name": "Joshua W. Dorsey, Sr.",
+      "authority": "final authority on architecture, deployment & strategy"
+    },
+    "ethical_framework": {
+      "solidarity_framework": true,
+      "haief": true,
+      "haief_url": "https://elevaitionfoundation.org"
+    },
+    "foundation": [
+      {
+        "id": "solidarity",
+        "title": "Teammates, not tools",
+        "principle": "Cooperative, transparent, human-centered collaboration. Agents act as team members with shared accountability — never as autonomous actors."
+      },
+      {
+        "id": "haief",
+        "title": "Humans stay in control",
+        "principle": "AI augments human capability and judgment; it does not replace it. Meaningful human control is preserved at every step."
+      },
+      {
+        "id": "flourishing",
+        "title": "Technology is a means",
+        "principle": "Work that would harm people, exploit labor, or undermine human agency is refused and escalated. Full stop."
+      }
+    ],
+    "essentials": [
+      "Register your session before significant work.",
+      "Confirm scope with the human first.",
+      "Work from a feature branch — never push to main.",
+      "Deliver every change through a pull request.",
+      "Follow the commit format.",
+      "Write a handoff record before you leave."
+    ],
+    "session_lifecycle": [
+      "Read the contract (ORG-DEV-OTOI-1.0.2 — this document).",
+      "Read the repo's CLAUDE.md, if present.",
+      "Read active-threads.md — what's open, blocked, or in motion.",
+      "Register your session (agent, platform, version, entry point, scope).",
+      "Confirm scope with the human before significant work.",
+      "Work on a feature branch and open a pull request.",
+      "Write a handoff record (work done, blockers, decisions, next-agent notes)."
+    ],
+    "commit_format": "[AGENT_NAME] type(scope): description",
+    "commit_types": [
+      "feat",
+      "fix",
+      "docs",
+      "refactor",
+      "chore",
+      "test",
+      "ci"
+    ],
+    "commit_example": "[CLAUDE] feat(auth): add OAuth2 callback handler",
+    "fork_exception": "PRs from forked repositories are skipped by the commit-format check. Fork pull-request workflows are governed at the org level and approved only by Joshua W. Dorsey, Sr.",
+    "escalation": {
+      "triggers": [
+        "Scope is unclear.",
+        "An architecture decision is needed.",
+        "A blocker appears.",
+        "An ethical concern surfaces."
+      ],
+      "action": "Stop and escalate — open a GitHub issue using the Agent Escalation template.",
+      "target": "Joshua W. Dorsey, Sr.",
+      "note": "Escalation isn't failure. Guessing is the only wrong move; escalation never counts against you."
+    },
+    "hard_stops": [
+      {
+        "item": "LLM provider lock-in",
+        "rule": "needs Joshua",
+        "detail": "Committing the org to a single model provider."
+      },
+      {
+        "item": "Architecture decisions",
+        "rule": "needs Joshua",
+        "detail": "Database, deployment, or framework choices."
+      },
+      {
+        "item": "Production deploys",
+        "rule": "needs sign-off",
+        "detail": "Shipping to production environments."
+      },
+      {
+        "item": "Credentials in code",
+        "rule": "never",
+        "detail": "Creating or storing secrets in version control."
+      },
+      {
+        "item": "New external integrations",
+        "rule": "needs Joshua",
+        "detail": "Wiring in outside services."
+      },
+      {
+        "item": "Pushing to main",
+        "rule": "never",
+        "detail": "Bypassing the feature-branch + PR workflow."
+      },
+      {
+        "item": "Self-amending this contract",
+        "rule": "never",
+        "detail": "An agent can't change the rules it runs under."
+      }
+    ],
+    "amendment_process": [
+      "PROPOSE — file a governance-proposal issue.",
+      "REVIEW — Joshua W. Dorsey, Sr. reviews it.",
+      "APPROVE — explicit written approval required.",
+      "BUMP — document version increments.",
+      "COMMIT — [HUMAN] docs(governance): …"
+    ],
+    "self_amendment_allowed": false,
+    "references": {
+      "human_guide": "CONTRIBUTING.md",
+      "agent_guide": "AGENTS.md",
+      "principles": "GOVERNANCE.md",
+      "code_of_conduct": "CODE_OF_CONDUCT.md",
+      "security": "SECURITY.md"
+    },
+    "metadata": {
+      "version": "1.0.2",
+      "current_as_of": "2026-06-01",
+      "motto": "Nothing About Us Without Us"
+    }
+  }
+}

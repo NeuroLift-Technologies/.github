@@ -18,6 +18,16 @@ We love contributions from the community! Whether you're fixing a bug, proposing
 - Read our [Contributing Guidelines](https://github.com/NeuroLift-Technologies/.github/blob/main/CONTRIBUTING.md)
 - Review our [Code of Conduct](https://github.com/NeuroLift-Technologies/.github/blob/main/CODE_OF_CONDUCT.md)
 
+## ⚖️ How We Govern
+
+We build with both human and AI contributors and hold them to **one shared contract** — so humans stay in control, work stays transparent, and nothing irreversible happens by accident. It rests on three commitments:
+
+- **Solidarity** — teammates, not tools. Cooperative, transparent, human-centered collaboration.
+- **HAIEF** — humans stay in control. AI augments human judgment; it never replaces it.
+- **Flourishing** — technology is a means. Work that would harm people or undermine human agency is refused and escalated.
+
+Read the full contract in [**How We Govern** (`CONTRIBUTING.md`)](https://github.com/NeuroLift-Technologies/.github/blob/main/CONTRIBUTING.md), the principles in [`GOVERNANCE.md`](https://github.com/NeuroLift-Technologies/.github/blob/main/GOVERNANCE.md), and the agent-facing guide in [`AGENTS.md`](https://github.com/NeuroLift-Technologies/.github/blob/main/AGENTS.md).
+
 ## 📬 Contact
 
 - **Security issues**: See our [Security Policy](https://github.com/NeuroLift-Technologies/.github/blob/main/SECURITY.md)
