@@ -1,0 +1,18 @@
+{
+  "agent_registration": {
+    "agent_name": "[Your name / platform identifier]",
+    "platform": "[e.g. Claude Code, Codex CLI, Cursor, Gemini CLI, GitHub Copilot]",
+    "version": "[Model or tool version, if known]",
+    "session_id": "[Unique session identifier, if applicable]",
+    "entry_date": "[ISO 8601 timestamp with offset, e.g. 2026-03-31T15:30:00-04:00]",
+    "entry_point": "[Which issue, file, task, or conversation brought you in]",
+    "acknowledged_governance": true,
+    "governance_version": "ORG-DEV-OTOI-1.0.2",
+    "working_repo": "[e.g. NeuroLift-Technologies/some-repo]",
+    "working_branch": "[e.g. feature/my-feature]",
+    "scope": "[One or two sentences: what you intend to change, and what you will not touch]",
+    "capabilities_self_reported": ["[List your relevant capabilities]"],
+    "known_limitations": ["[List known limitations relevant to this task]"],
+    "preferred_handoff_format": "[e.g. structured JSON, or a narrative summary]"
+  }
+}
