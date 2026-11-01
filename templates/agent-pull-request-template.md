@@ -1,5 +1,7 @@
 # Agent Pull Request Template
 
+> **How to create PR bodies:** This template is applied via `gh pr edit --body-file /tmp/pr_body.md` where the body is written using `cat > /tmp/pr_body.md << 'HEREDOC'` (single-quoted heredoc prevents bash from interpreting special characters like `[ORG-DEV-OTOI-1.0.3]` and arrows `→`). Do not use `gh pr create --body "..."` directly as bash will interpret markdown/JSON characters as commands.
+
 **Purpose:** Standard pull request template for AI agent contributions to NeuroLift Technologies public repositories.
 
 **Governed by:** `governance.yaml` (ORG-DEV-OTOI-1.0.3)
