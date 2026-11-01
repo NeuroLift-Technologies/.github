@@ -2,7 +2,7 @@
 
 This file defines the canonical format for agent-conducted reviews in NeuroLift Technologies **public** repositories. Agents performing code, content, or security review should follow this structure so reviews are consistent and easy for a maintainer to act on.
 
-> **Start here:** [`governance.yaml`](governance.yaml) is the authoritative machine-readable contract (`ORG-DEV-OTOI-1.0.3`) and [`AGENTS.md`](AGENTS.md) is the agent-facing guide. If anything in this file disagrees with `governance.yaml`, `governance.yaml` wins.
+> **Start here:** [`governance.yaml`](governance.yaml) is the authoritative machine-readable contract (`ORG-DEV-OTOI-1.0.4`) and [`AGENTS.md`](AGENTS.md) is the agent-facing guide. If anything in this file disagrees with `governance.yaml`, `governance.yaml` wins.
 
 ## Review Metadata
 
@@ -10,7 +10,7 @@ This file defines the canonical format for agent-conducted reviews in NeuroLift 
 **Review Date:** [ISO 8601 date]
 **Review Type:** [Code | Content | Security]
 **Scope:** [Files, pages, or sections reviewed]
-**Governance Version:** ORG-DEV-OTOI-1.0.3
+**Governance Version:** ORG-DEV-OTOI-1.0.4
 
 ## Pre-Review Checklist
 
@@ -83,4 +83,4 @@ This file defines the canonical format for agent-conducted reviews in NeuroLift 
 
 ---
 
-*Review format for NeuroLift Technologies public repositories | ORG-DEV-OTOI-1.0.3*
+*Review format for NeuroLift Technologies public repositories | ORG-DEV-OTOI-1.0.4*

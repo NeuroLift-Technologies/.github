@@ -4,7 +4,7 @@
 **Version:** 1.0.0
 **Scope:** Responding to a coding agent that has deviated from the governance contract in a
 **NeuroLift Technologies** public repository
-**Governed by:** ORG-DEV-OTOI-1.0.3
+**Governed by:** ORG-DEV-OTOI-1.0.4
 
 ## Purpose
 
@@ -170,4 +170,4 @@ Install a pre-commit secrets scanner and run it in blocking mode at session end.
 
 ---
 
-*SOP-NLT-003 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.3*
+*SOP-NLT-003 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.4*

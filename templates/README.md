@@ -2,7 +2,7 @@
 
 Two small JSON files that make the public governance contract actionable.
 
-[../governance.yaml](governance.yaml) (ORG-DEV-OTOI-1.0.3) asks every contributor — human or agent — for two things that this repository previously described but never gave you a shape for:
+[../governance.yaml](governance.yaml) (ORG-DEV-OTOI-1.0.4) asks every contributor — human or agent — for two things that this repository previously described but never gave you a shape for:
 
 | Requirement in ../governance.yaml | Template |
 |---|---|
@@ -32,4 +32,4 @@ If you are unsure whether something needs an escalation, open an issue using the
 
 ---
 
-*NeuroLift Technologies | ORG-DEV-OTOI-1.0.3 | public repository templates*
+*NeuroLift Technologies | ORG-DEV-OTOI-1.0.4 | public repository templates*

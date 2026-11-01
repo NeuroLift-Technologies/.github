@@ -1,6 +1,6 @@
 ---
 name: Governance Proposal
-about: Propose an amendment to the How We Govern contract (ORG-DEV-OTOI-1.0.3) or other governance docs
+about: Propose an amendment to the How We Govern contract (ORG-DEV-OTOI-1.0.4) or other governance docs
 title: '[GOVERNANCE] [Brief description of proposed change]'
 labels: governance, proposal
 assignees: JDUB1216
@@ -11,7 +11,7 @@ assignees: JDUB1216
 **Proposed by:** <!-- Your name or agent name -->
 **Date:** <!-- ISO 8601 date -->
 **Document to amend:** <!-- e.g. CONTRIBUTING.md, GOVERNANCE.md, governance.yaml -->
-**Current version:** <!-- e.g. ORG-DEV-OTOI-1.0.3 -->
+**Current version:** <!-- e.g. ORG-DEV-OTOI-1.0.4 -->
 **Proposed new version:** <!-- e.g. ORG-DEV-OTOI-1.1.0 -->
 
 ---
