@@ -3,7 +3,7 @@
 **SOP ID:** SOP-NLT-002 (public edition)
 **Version:** 1.0.0
 **Scope:** Setting up governance files in a NeuroLift Technologies **public** repository
-**Governed by:** ORG-DEV-OTOI-1.0.3
+**Governed by:** ORG-DEV-OTOI-1.0.4
 
 ## Purpose
 
@@ -37,7 +37,7 @@ GitHub treats [`NeuroLift-Technologies/.github`](https://github.com/NeuroLift-Te
 | `CLAUDE.md` | Session directive pointing at the governance contract | You want repo-specific context for agents |
 | `REVIEW.md` | Canonical review format | Maintainers want a consistent review shape |
 | `templates/` | Session registration + handoff schemas | Agents will register and hand off |
-| `docs/active-threads.md` | Current work state | Required for all repositories with more than one contributor; add it if missing |
+| `docs/active-threads.md` | Current work state | **Always** - ORG-DEV-OTOI-1.0.4 section 6 requires every NLT repository to maintain one |
 | `SECURITY.md` | **Private** channel for vulnerability reports | **Always** — never accept secret reports in public issues |
 
 ## Step-by-Step Procedure
@@ -50,7 +50,7 @@ GitHub treats [`NeuroLift-Technologies/.github`](https://github.com/NeuroLift-Te
 You are working in a NeuroLift Technologies public repository.
 
 **Read first:**
-1. Governance contract (machine-readable, ORG-DEV-OTOI-1.0.3):
+1. Governance contract (machine-readable, ORG-DEV-OTOI-1.0.4):
    https://github.com/NeuroLift-Technologies/.github/blob/main/governance.yaml
 2. Agent guide:
    https://github.com/NeuroLift-Technologies/.github/blob/main/AGENTS.md
@@ -62,7 +62,7 @@ You are working in a NeuroLift Technologies public repository.
 **Non-negotiable:** maintainers decide architecture, dependencies, and deployment.
 Escalate by opening an Agent Escalation issue. Do not guess.
 
-**Governed by:** ORG-DEV-OTOI-1.0.3
+**Governed by:** ORG-DEV-OTOI-1.0.4
 ```
 
 ### Step 2: Copy `REVIEW.md` and `templates/` If You Use Them
@@ -71,15 +71,22 @@ Take them from the public hub rather than rewriting them, so the whole organizat
 
 ### Step 3: Add `docs/active-threads.md`
 
-If more than one contributor works in parallel, a short shared file beats guesswork:
+**Every NLT repository must maintain `docs/active-threads.md`** per ORG-DEV-OTOI-1.0.4 section 6. Add it at the start of your session if missing, and update it at session end.
+
+The canonical thread block format is:
 
 ```markdown
-# Active Threads
-
-| Thread | Owner | Status | Notes |
-|---|---|---|---|
-| [what] | [who] | in progress / blocked / review | [context] |
+### Thread: [Thread ID]
+**Status:** [open | blocked | resolved]
+**Owner:** [Name (platform-id)] — e.g. `Claude (anthropic-code-agent)` or a human contributor
+**Started:** [ISO 8601 timestamp with offset, e.g. 2026-03-31T15:30:00-04:00]
+**Last updated:** [ISO 8601 timestamp with offset, e.g. 2026-03-31T15:30:00-04:00]
+**Summary:** [One-paragraph description]
+**Blockers:** [Any blocking conditions]
+**Next action:** [Specific next step required]
 ```
+
+Date-only values (e.g. `2026-03-31`) are nonconformant — ISO 8601 with timezone offset is required.
 
 ### Step 4: Confirm `SECURITY.md` Exists
 
@@ -129,4 +136,4 @@ The practical consequence: public governance is maintained here, by hand, and re
 
 ---
 
-*SOP-NLT-002 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.3*
+*SOP-NLT-002 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.4*

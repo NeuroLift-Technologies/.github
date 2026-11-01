@@ -3,7 +3,7 @@
 The rules — and the spirit — that every contributor works under inside a NeuroLift Technologies repository. Human or agent. Internal or external. **The same contract for all of us.**
 
 > **Machine-readable version:** [`governance.yaml`](governance.yaml) · [`governance.json`](governance.json) — agents should parse these first.
-> **Contract:** `ORG-DEV-OTOI-1.0.3` · **Maintained by** Joshua W. Dorsey, Sr. · **Governed by** the Solidarity Framework & HAIEF ([neurolift-technologies.github.io/haief](https://neurolift-technologies.github.io/haief/))
+> **Contract:** `ORG-DEV-OTOI-1.0.4` · **Maintained by** Joshua W. Dorsey, Sr. · **Governed by** the Solidarity Framework & HAIEF ([neurolift-technologies.github.io/haief](https://neurolift-technologies.github.io/haief/))
 
 These guidelines apply to all repositories in the **NeuroLift Technologies** organization unless a repository provides its own `CONTRIBUTING.md`. The agent-facing companion is [`AGENTS.md`](AGENTS.md); the principles behind it all are in [`GOVERNANCE.md`](GOVERNANCE.md).
 
@@ -42,7 +42,7 @@ Escalation is always available — and never counts against you.
 
 Every session runs the same loop. The order matters — each step sets up the next.
 
-1. **Read the contract** — `ORG-DEV-OTOI-1.0.3` (this document).
+1. **Read the contract** — `ORG-DEV-OTOI-1.0.4` (this document).
 2. **Read the repo's `CLAUDE.md`** — repo-level context, if present.
 3. **Read `docs/active-threads.md`** — what's open, blocked, or in motion right now. Every NLT repo maintains one; if a repo doesn't have it yet, add it (see the format in [`docs/active-threads.md`](docs/active-threads.md)).
 4. **Register your session** — agent, platform, version, entry point, scope.
@@ -123,4 +123,4 @@ This contract changes only one way. Agents may propose; only Joshua approves.
 
 ---
 
-*`ORG-DEV-OTOI-1.0.3` · NeuroLift Technologies · Governed by the Solidarity Framework & HAIEF · Maintained by Joshua W. Dorsey, Sr. — final authority on all architectural, deployment, and strategic decisions. · Nothing About Us Without Us*
+*`ORG-DEV-OTOI-1.0.4` · NeuroLift Technologies · Governed by the Solidarity Framework & HAIEF · Maintained by Joshua W. Dorsey, Sr. — final authority on all architectural, deployment, and strategic decisions. · Nothing About Us Without Us*
