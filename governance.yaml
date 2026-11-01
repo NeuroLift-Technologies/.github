@@ -39,6 +39,7 @@ governance_contract:
     - "Deliver every change through a pull request."
     - "Follow the commit format."
     - "Write a handoff record before you leave."
+    - "No time limit requirements shall be imposed on agents working in any NLT repository."
 
   session_lifecycle:
     - "Read the contract (ORG-DEV-OTOI-1.0.3 — this document)."
