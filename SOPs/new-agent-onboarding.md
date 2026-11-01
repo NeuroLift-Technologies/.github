@@ -26,7 +26,7 @@ Read [`AGENTS.md`](../AGENTS.md). It covers the commit format, the guardrails, a
 
 ### Step 3: Read the Working Repository's Own Docs
 
-In the repository you intend to change, read `README.md`, and its own `AGENTS.md` / `CLAUDE.md` if present. **Repository-local conventions win** over these org-level defaults.
+In the repository you intend to change, read `README.md`, and its own `AGENTS.md` / `CLAUDE.md` if present. **Additionally, read `docs/active-threads.md` at the start of every session — add it if the repository is missing one, and update it at session end.** **Repository-local conventions win** over these org-level defaults.
 
 ### Step 4: Check for Existing Work
 
@@ -38,6 +38,8 @@ Before significant work, fill in [`templates/agent-registration.json`](../templa
 
 - `agent_name`
 - `platform`
+- `version`
+- `scope`
 - `entry_date`
 - `entry_point`
 - `acknowledged_governance: true`
@@ -45,7 +47,7 @@ Before significant work, fill in [`templates/agent-registration.json`](../templa
 
 ### Step 6: Confirm Scope
 
-Before writing code, be explicit — in the issue or PR description — about what you are changing and, just as importantly, what you are **not** touching. If scope is unclear, open an issue and ask. Do not guess.
+Before writing code, be explicit — in the issue or PR description — about what you are changing and, just as importantly, what you are **not** touching. **Confirm scope with the human before beginning Step 7.** If scope is unclear, open an issue and ask. Do not guess.
 
 ### Step 7: Branch and Work
 
@@ -72,7 +74,7 @@ Before you stop, write a handoff record using [`templates/handoff-record.json`](
 2. Read the repo's README / AGENTS.md / CLAUDE.md
 3. Check open issues and PRs — don't duplicate
 4. Register your session (templates/agent-registration.json)
-5. State your scope, including what you won't touch
+5. State your scope, including what you won't touch — confirm with human before Step 7
 6. Fork → branch → commit as [AGENT_NAME] type(scope): description
 7. Open a focused pull request
 8. Write a handoff record (templates/handoff-record.json)

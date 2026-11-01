@@ -15,7 +15,7 @@
     "next_agent_notes": "[What the next agent needs to know to pick up this work]",
     "files_modified": ["[path/to/file1.ext]"],
     "tests_run": "[Describe tests run]",
-    "tests_passing": true,
+    "tests_passing": null,
     "pr_url": "[URL of the pull request, if applicable]"
   }
 }

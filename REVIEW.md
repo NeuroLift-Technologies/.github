@@ -66,7 +66,7 @@ This file defines the canonical format for agent-conducted reviews in NeuroLift 
 - [ ] No architecture decisions made unilaterally by an agent
 - [ ] No new external integrations added without maintainer approval
 - [ ] Commit format follows `[AGENT_NAME] type(scope): description`
-- [ ] Session registration and handoff record written, if the change was agent-authored (see [`templates/`](../templates/))
+- [ ] Session registration and handoff record written, if the change was agent-authored (see [`templates/`](templates/))
 
 ## Verdict
 

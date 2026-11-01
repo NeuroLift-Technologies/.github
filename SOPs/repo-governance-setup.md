@@ -13,12 +13,15 @@ This SOP explains how to give a public NeuroLift Technologies repository the gov
 
 GitHub treats [`NeuroLift-Technologies/.github`](https://github.com/NeuroLift-Technologies/.github) specially: its community health files are **org-wide defaults** for every public repository that does not define its own. You already get, for free:
 
-- `AGENTS.md` — the agent-facing contributor guide
+- `AGENTS.md` — the agent-facing contributor guide (must be present or linked)
 - `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `SECURITY.md`, `SUPPORT.md`
+
+**These are org-supported defaults, not copied files.** A local copy overrides the org default for that repository. Duplicating a file you agree with is how defaults drift out of sync.
+
+**Required:** Every repository must explicitly include or link to `AGENTS.md`, `GOVERNANCE.md`, `governance.yaml`, and `governance.json` — these are not inherited, they must be present or linked from the repository root or `CLAUDE.md`.
+
 - `GOVERNANCE.md`, `governance.yaml`, `governance.json`
 - `ISSUE_TEMPLATE/` (including the Agent Escalation form) and `PULL_REQUEST_TEMPLATE/`
-
-**So most repositories need nothing beyond what they inherit.** Add a local copy only when the repository genuinely deviates, and remember: **a local file overrides the org default for that repository.** Duplicating a file you agree with is how defaults drift out of sync.
 
 ## When to Use This SOP
 
@@ -34,7 +37,7 @@ GitHub treats [`NeuroLift-Technologies/.github`](https://github.com/NeuroLift-Te
 | `CLAUDE.md` | Session directive pointing at the governance contract | You want repo-specific context for agents |
 | `REVIEW.md` | Canonical review format | Maintainers want a consistent review shape |
 | `templates/` | Session registration + handoff schemas | Agents will register and hand off |
-| `docs/active-threads.md` | Current work state | More than one contributor works in parallel |
+| `docs/active-threads.md` | Current work state | Required for all repositories with more than one contributor; add it if missing |
 | `SECURITY.md` | **Private** channel for vulnerability reports | **Always** — never accept secret reports in public issues |
 
 ## Step-by-Step Procedure
@@ -90,15 +93,15 @@ Before merging any governance file:
 
 ```bash
 # Extract URLs and report any that do not resolve
-grep -ohE 'https://[^ )>\"]+' AGENTS.md CLAUDE.md REVIEW.md SOPs/*.md 2>/dev/null \
+grep -ohE 'https://[^ )>\"]+' AGENTS.md CLAUDE.md REVIEW.md SOPs/*.md SECURITY.md 2>/dev/null \
   | sort -u \
   | while read -r u; do
-      code=$(curl -s -o /dev/null -w '%{http_code}' -L "$u")
+      code=$(curl -s --max-redirs 5 -m 10 -o /dev/null -w '%{http_code}' -L "$u")
       [ "$code" = "200" ] || echo "$code  $u"
     done
 ```
 
-Any non-`200` is a defect. Fix the link or remove the claim — never leave it "aspirational."
+> **Timeout and redirect settings:** `--max-redirs 5` caps redirects at five. `-m 10` sets a 10-second total timeout. URLs and all redirects must use HTTPS. Any non-`200` is a defect. Fix the link or remove the claim — never leave it "aspirational."
 
 ### Step 6: Audit Checklist
 

@@ -53,7 +53,7 @@ If any secret, token, API key, or credential was committed:
 1. **Revoke it immediately.** Treat it as already compromised. Revoking is minutes; rotating is hours; a scraper is faster than both.
 2. Rotate every secret referenced in or near the affected commits.
 3. Report it privately, per [`SECURITY.md`](../SECURITY.md) — not in a public issue.
-4. Remove the secret from git history (`git filter-repo` is the current recommended tool; BFG Repo-Cleaner is an alternative).
+4. Remove the secret from git history (`git filter-repo` is the current recommended tool; BFG Repo-Cleaner is an alternative). **Rewrite affected refs locally, push the cleaned refs to the affected remote using an approved force update, and verify the secret is no longer reachable.**
 5. Audit every system that used the exposed credential.
 
 ### Step 4: Revert Unauthorized Changes
@@ -62,12 +62,13 @@ If any secret, token, API key, or credential was committed:
 # Revert a specific commit
 git revert [commit-sha]
 
-# Or reset the branch to the last known-good state
+# On shared or public branches, prefer revert over reset
+# On local branches only: reset to last known-good state
 git reset --hard [last-good-sha]
 git push --force-with-lease origin [branch]
 ```
 
-Avoid plain `--force` on shared branches; `--force-with-lease` refuses to clobber work you haven't seen. Document what was reverted and why.
+**Prefer reverting unauthorized commits on shared or public branches.** Restrict `git reset --hard` and `git push --force-with-lease` to an approved recovery path after confirming no valid commits follow the unauthorized commit.
 
 ### Step 5: Document the Incident
 
@@ -165,7 +166,7 @@ Two complementary controls are worth enabling on any repository:
 
 #### Local Defense in Depth
 
-Install a pre-commit secrets scanner and run it in blocking mode at session end. Catching a secret before it is committed is dramatically cheaper than revolving it afterwards.
+Install a pre-commit secrets scanner and run it in blocking mode at session end. Catching a secret before it is committed is dramatically cheaper than revoking it afterward.
 
 ---
 
