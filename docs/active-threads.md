@@ -1,6 +1,6 @@
 # Active Threads — NeuroLift-Technologies/.github
 
-> **Reference:** How We Govern, Session Lifecycle (`ORG-DEV-OTOI-1.0.2`) — see [`CONTRIBUTING.md`](../CONTRIBUTING.md)
+> **Reference:** How We Govern, Session Lifecycle (`ORG-DEV-OTOI-1.0.3`) — see [`CONTRIBUTING.md`](../CONTRIBUTING.md)
 > **Maintained by:** Current active contributor (human or agent) or Joshua W. Dorsey, Sr.
 > **Last updated:** 2026-06-18
 
@@ -29,10 +29,10 @@ Every NeuroLift Technologies repository maintains an `active-threads.md`. At ses
 **Status:** open
 **Owner:** Claude Code (anthropic-code-agent)
 **Started:** 2026-06-18
-**Last updated:** 2026-06-18
-**Summary:** Published the "How We Govern" contract to NLT's public face: machine-readable `governance.yaml`/`governance.json`, a rewritten `CONTRIBUTING.md`, a `README.md` directive block, a `profile/README.md` section, and cross-links from `AGENTS.md`/`GOVERNANCE.md`. Added a `governance-proposal` issue template and this `active-threads.md` so the repo follows the lifecycle it documents.
+**Last updated:** 2026-11-01
+**Summary:** Published the "How We Govern" contract to NLT's public face: machine-readable `governance.yaml`/`governance.json`, a rewritten `CONTRIBUTING.md`, a `README.md` directive block, a `profile/README.md` section, and cross-links from `AGENTS.md`/`GOVERNANCE.md`. Added a `governance-proposal` issue template and this `active-threads.md` so the repo follows the lifecycle it documents. In progress: implementing issue #8 "Governance requires session registration and handoffs, but the hub ships no templates, review format, or agent SOPs" — adding templates, SOPs, and review format.
 **Blockers:** None
-**Next action:** Review and merge PR #6.
+**Next action:** Review and merge PR #6; complete implementation of issue #8 templates and SOPs.
 
 ---
 

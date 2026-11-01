@@ -6,7 +6,7 @@ ai_assistant_directive:
   instruction: "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json)."
   description: "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository."
   required_files: ["CONTRIBUTING.md", "governance.yaml", "governance.json"]
-  document_id: "ORG-DEV-OTOI-1.0.2"
+  document_id: "ORG-DEV-OTOI-1.0.3"
 ```
 
 ```json
@@ -16,7 +16,7 @@ ai_assistant_directive:
     "instruction": "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json).",
     "description": "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository.",
     "required_files": ["CONTRIBUTING.md", "governance.yaml", "governance.json"],
-    "document_id": "ORG-DEV-OTOI-1.0.2"
+    "document_id": "ORG-DEV-OTOI-1.0.3"
   }
 }
 ```

@@ -2,7 +2,7 @@
 # Machine-readable governance contract. Parse this first.
 # Human-readable version: CONTRIBUTING.md · Principles: GOVERNANCE.md
 governance_contract:
-  document_id: ORG-DEV-OTOI-1.0.2
+  document_id: ORG-DEV-OTOI-1.0.3
   title: How We Govern — NeuroLift Technologies
   summary: >-
     One shared contract for every contributor — human or agent, internal or
@@ -19,6 +19,7 @@ governance_contract:
     solidarity_framework: true
     haief: true
     haief_url: https://neurolift-technologies.github.io/haief/
+    non_exploitation: true
 
   foundation:
     - id: solidarity
@@ -38,9 +39,10 @@ governance_contract:
     - "Deliver every change through a pull request."
     - "Follow the commit format."
     - "Write a handoff record before you leave."
+    - "No time limit requirements shall be imposed on agents working in any NLT repository."
 
   session_lifecycle:
-    - "Read the contract (ORG-DEV-OTOI-1.0.2 — this document)."
+    - "Read the contract (ORG-DEV-OTOI-1.0.3 — this document)."
     - "Read the repo's CLAUDE.md, if present."
     - "Read docs/active-threads.md — what's open, blocked, or in motion (every repo maintains one; add it if missing)."
     - "Register your session (agent, platform, version, entry point, scope)."
@@ -88,6 +90,6 @@ governance_contract:
     security: SECURITY.md
 
   metadata:
-    version: "1.0.2"
-    current_as_of: "2026-06-01"
+    version: "1.0.3"
+    current_as_of: "2026-11-01"
     motto: "Nothing About Us Without Us"
