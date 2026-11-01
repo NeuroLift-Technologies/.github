@@ -1,6 +1,6 @@
 # Active Threads — NeuroLift-Technologies/.github
 
-> **Reference:** How We Govern, Session Lifecycle (`ORG-DEV-OTOI-1.0.2`) — see [`CONTRIBUTING.md`](../CONTRIBUTING.md)
+> **Reference:** How We Govern, Session Lifecycle (`ORG-DEV-OTOI-1.0.3`) — see [`CONTRIBUTING.md`](../CONTRIBUTING.md)
 > **Maintained by:** Current active contributor (human or agent) or Joshua W. Dorsey, Sr.
 > **Last updated:** 2026-06-18
 

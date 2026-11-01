@@ -9,7 +9,7 @@ contributors. These guidelines apply to all public repositories in the
 
 > **Parse the contract first:** [`governance.yaml`](governance.yaml) /
 > [`governance.json`](governance.json) are the machine-readable version of how
-> we govern (`ORG-DEV-OTOI-1.0.2`). The full prose contract is in
+> we govern (`ORG-DEV-OTOI-1.0.3`). The full prose contract is in
 > [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ## You're Welcome Here

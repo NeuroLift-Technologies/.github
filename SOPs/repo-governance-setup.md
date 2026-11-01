@@ -3,7 +3,7 @@
 **SOP ID:** SOP-NLT-002 (public edition)
 **Version:** 1.0.0
 **Scope:** Setting up governance files in a NeuroLift Technologies **public** repository
-**Governed by:** ORG-DEV-OTOI-1.0.2
+**Governed by:** ORG-DEV-OTOI-1.0.3
 
 ## Purpose
 
@@ -47,7 +47,7 @@ GitHub treats [`NeuroLift-Technologies/.github`](https://github.com/NeuroLift-Te
 You are working in a NeuroLift Technologies public repository.
 
 **Read first:**
-1. Governance contract (machine-readable, ORG-DEV-OTOI-1.0.2):
+1. Governance contract (machine-readable, ORG-DEV-OTOI-1.0.3):
    https://github.com/NeuroLift-Technologies/.github/blob/main/governance.yaml
 2. Agent guide:
    https://github.com/NeuroLift-Technologies/.github/blob/main/AGENTS.md
@@ -59,7 +59,7 @@ You are working in a NeuroLift Technologies public repository.
 **Non-negotiable:** maintainers decide architecture, dependencies, and deployment.
 Escalate by opening an Agent Escalation issue. Do not guess.
 
-**Governed by:** ORG-DEV-OTOI-1.0.2
+**Governed by:** ORG-DEV-OTOI-1.0.3
 ```
 
 ### Step 2: Copy `REVIEW.md` and `templates/` If You Use Them
@@ -126,4 +126,4 @@ The practical consequence: public governance is maintained here, by hand, and re
 
 ---
 
-*SOP-NLT-002 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.2*
+*SOP-NLT-002 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.3*

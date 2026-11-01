@@ -1,6 +1,6 @@
 {
   "governance_contract": {
-    "document_id": "ORG-DEV-OTOI-1.0.2",
+    "document_id": "ORG-DEV-OTOI-1.0.3",
     "title": "How We Govern — NeuroLift Technologies",
     "summary": "One shared contract for every contributor — human or agent, internal or external — in any NeuroLift Technologies repository. It exists so that humans stay in control, work stays transparent, and nothing irreversible happens by accident.",
     "applies_to": "every contributor (human or agent) in every NLT repository",
@@ -39,7 +39,7 @@
       "Write a handoff record before you leave."
     ],
     "session_lifecycle": [
-      "Read the contract (ORG-DEV-OTOI-1.0.2 — this document).",
+      "Read the contract (ORG-DEV-OTOI-1.0.3 — this document).",
       "Read the repo's CLAUDE.md, if present.",
       "Read docs/active-threads.md — what's open, blocked, or in motion (every repo maintains one; add it if missing).",
       "Register your session (agent, platform, version, entry point, scope).",
@@ -123,7 +123,7 @@
       "security": "SECURITY.md"
     },
     "metadata": {
-      "version": "1.0.2",
+      "version": "1.0.3",
       "current_as_of": "2026-06-01",
       "motto": "Nothing About Us Without Us"
     }

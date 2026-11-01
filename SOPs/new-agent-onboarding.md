@@ -3,7 +3,7 @@
 **SOP ID:** SOP-NLT-001 (public edition)
 **Version:** 1.0.0
 **Scope:** Coding agents beginning work in any NeuroLift Technologies **public** repository
-**Governed by:** ORG-DEV-OTOI-1.0.2
+**Governed by:** ORG-DEV-OTOI-1.0.3
 
 ## Purpose
 
@@ -18,7 +18,7 @@ This SOP gets a new coding agent from "I just got here" to "I can safely open a 
 
 ### Step 1: Read the Governance Contract
 
-Read [`governance.yaml`](../governance.yaml) in this repository (machine-readable, `ORG-DEV-OTOI-1.0.2`) and the prose in [`GOVERNANCE.md`](../GOVERNANCE.md). Pay particular attention to the `essentials`, `session_lifecycle`, and `hard_stops` keys.
+Read [`governance.yaml`](../governance.yaml) in this repository (machine-readable, `ORG-DEV-OTOI-1.0.3`) and the prose in [`GOVERNANCE.md`](../GOVERNANCE.md). Pay particular attention to the `essentials`, `session_lifecycle`, and `hard_stops` keys.
 
 ### Step 2: Read the Agent Guide
 
@@ -41,7 +41,7 @@ Before significant work, fill in [`templates/agent-registration.json`](../templa
 - `entry_date`
 - `entry_point`
 - `acknowledged_governance: true`
-- `governance_version: "ORG-DEV-OTOI-1.0.2"`
+- `governance_version: "ORG-DEV-OTOI-1.0.3"`
 
 ### Step 6: Confirm Scope
 
@@ -90,4 +90,4 @@ If you are unsure, hit a guardrail, or need a decision that belongs to a maintai
 
 ---
 
-*SOP-NLT-001 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.2*
+*SOP-NLT-001 (public edition) v1.0.0 | NeuroLift Technologies | ORG-DEV-OTOI-1.0.3*

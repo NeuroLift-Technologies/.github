@@ -2,7 +2,7 @@
 
 **Purpose:** Standard pull request template for AI agent contributions to NeuroLift Technologies public repositories.
 
-**Governed by:** `governance.yaml` (ORG-DEV-OTOI-1.0.2)
+**Governed by:** `governance.yaml` (ORG-DEV-OTOI-1.0.3)
 
 > **Start here:** [`governance.yaml`](governance.yaml) is the authoritative machine-readable contract and [`AGENTS.md`](AGENTS.md) is the agent-facing guide. If anything in this template disagrees with `governance.yaml`, `governance.yaml` wins.
 
@@ -12,7 +12,7 @@
 **Branch:** [feature/...]
 **Working repo:** [Repository name]
 **PR Type:** [feat | fix | docs | refactor | chore | test | ci]
-**Governance Version:** ORG-DEV-OTOI-1.0.2
+**Governance Version:** ORG-DEV-OTOI-1.0.3
 
 ---
 
