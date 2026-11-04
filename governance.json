@@ -126,7 +126,22 @@
     "metadata": {
       "version": "1.0.4",
       "current_as_of": "2026-11-01",
-      "motto": "Nothing About Us Without Us"
+      "motto": "Nothing About Us Without Us",
+      "changelog": [
+        {
+          "version": "1.0.4",
+          "date": "2026-11-01",
+          "changes": [
+            "SOP versions bumped to 1.0.1 across all SOPs",
+            "Added changelog field to governance.yaml and governance.json",
+            "Converged governance.json and governance.yaml to ORG-DEV-OTOI-1.0.4",
+            "Added 'no time limit' essential to essentials list",
+            "Fixed CLAUDE.md to reference governance.yaml and governance.json",
+            "Fixed agent-escalation.md template label references"
+          ],
+          "author": "[HUMAN]"
+        }
+      ]
     }
   }
 }

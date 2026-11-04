@@ -2,7 +2,7 @@
 name: Agent Escalation
 about: Filed by an AI coding agent when a task needs a maintainer decision before it can proceed
 title: '[ESCALATION] [AGENT_NAME] [REPO] Brief description'
-labels: escalation, agent
+labels: question, help wanted
 assignees: ''
 ---
 
