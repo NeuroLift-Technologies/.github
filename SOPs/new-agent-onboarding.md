@@ -1,7 +1,7 @@
 # SOP: New Coding Agent Onboarding (Public Edition)
 
 **SOP ID:** SOP-NLT-001 (public edition)
-**Version:** 1.0.0
+**Version:** 1.0.1
 **Scope:** Coding agents beginning work in any NeuroLift Technologies **public** repository
 **Governed by:** ORG-DEV-OTOI-1.0.4
 

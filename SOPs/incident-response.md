@@ -1,7 +1,7 @@
 # SOP: Incident Response — When an Agent Goes Off-Rails (Public Edition)
 
 **SOP ID:** SOP-NLT-003 (public edition)
-**Version:** 1.0.0
+**Version:** 1.0.1
 **Scope:** Responding to a coding agent that has deviated from the governance contract in a
 **NeuroLift Technologies** public repository
 **Governed by:** ORG-DEV-OTOI-1.0.4

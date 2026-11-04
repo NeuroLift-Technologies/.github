@@ -1,7 +1,7 @@
 # SOP: Repository Governance Setup (Public Edition)
 
 **SOP ID:** SOP-NLT-002 (public edition)
-**Version:** 1.0.0
+**Version:** 1.0.1
 **Scope:** Setting up governance files in a NeuroLift Technologies **public** repository
 **Governed by:** ORG-DEV-OTOI-1.0.4
 
