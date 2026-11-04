@@ -1,0 +1,45 @@
+{
+  "session_lifecycle": {
+    "require_registration": true,
+    "confirm_scope": true,
+    "feature_branch_only": true,
+    "require_pr": true,
+    "write_handoff_record": true,
+    "no_time_limit": true
+  },
+  "commit_format": "[AGENT_NAME] type(scope): description",
+  "commit_types": ["feat", "fix", "docs", "refactor", "chore", "test", "ci"],
+  "hard_stops": {
+    "llm_provider_lock_in": "needs Joshua",
+    "architecture_decisions": "needs Joshua",
+    "production_deploys": "needs sign-off",
+    "credentials_in_code": "never",
+    "new_external_integrations": "needs Joshua",
+    "pushing_to_main": "never",
+    "self_amending_contract": "never"
+  },
+  "essentials": [
+    "Register your session before significant work.",
+    "Confirm scope with the human first.",
+    "Work from a feature branch — never push to main.",
+    "Deliver every change through a pull request.",
+    "Follow the commit format.",
+    "Write a handoff record before you leave.",
+    "No time limit requirements shall be imposed on agents working in any NLT repository."
+  ],
+  "session_registration": {
+    "required_fields": ["agent_name", "platform", "version", "scope", "entry_date", "entry_point", "acknowledged_governance", "governance_version"]
+  },
+  "escalation": {
+    "triggers": ["Scope is unclear", "Architecture decision needed", "Blocker appears", "Ethical concern surfaces"],
+    "action": "Stop and escalate — open a GitHub issue using the Agent Escalation template.",
+    "target": "Joshua W. Dorsey, Sr."
+  },
+  "references": {
+    "human_guide": "CONTRIBUTING.md",
+    "agent_guide": "AGENTS.md",
+    "principles": "GOVERNANCE.md",
+    "code_of_conduct": "CODE_OF_CONDUCT.md",
+    "security": "SECURITY.md"
+  }
+}
