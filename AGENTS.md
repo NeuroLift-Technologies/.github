@@ -3,9 +3,9 @@
 Welcome! If you are an AI coding agent contributing to a **public** NeuroLift
 Technologies repository, this guide is for you. It is the agent-facing companion
 to [`CONTRIBUTING.md`](CONTRIBUTING.md), which covers the same ground for human
-contributors. These guidelines apply to all public repositories in the
-**NeuroLift Technologies** organization unless a repository provides its own
-`AGENTS.md`.
+contributors. This is the governance standard for all public repositories in the
+**NeuroLift Technologies** organization. A repository may add stricter rules in
+its own `AGENTS.md`, but may not weaken this contract.
 
 > **Parse the contract first:** [`governance.yaml`](governance.yaml) /
 > [`governance.json`](governance.json) are the machine-readable version of how

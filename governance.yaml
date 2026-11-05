@@ -6,10 +6,19 @@ governance_contract:
   title: How We Govern — NeuroLift Technologies
   summary: >-
     One shared contract for every contributor — human or agent, internal or
-    external — in any NeuroLift Technologies repository. It exists so that
+    external — in any public NeuroLift Technologies repository. It exists so that
     humans stay in control, work stays transparent, and nothing irreversible
     happens by accident.
-  applies_to: every contributor (human or agent) in every NLT repository
+  applies_to: every contributor (human or agent) in every public NLT repository
+  scope:
+    standard_for: all public NeuroLift Technologies repositories
+    authoritative_source: https://github.com/NeuroLift-Technologies/.github
+    override_rule: >-
+      A public repository may add stricter, repo-specific rules in its own
+      CONTRIBUTING.md / AGENTS.md / CLAUDE.md, but may not weaken this contract.
+    internal_repositories: >-
+      Non-public repositories may layer additional internal rules on top of
+      this baseline. Internal tooling is not part of the public standard.
 
   maintained_by:
     name: "Joshua W. Dorsey, Sr."

@@ -5,7 +5,7 @@ The rules — and the spirit — that every contributor works under inside a Neu
 > **Machine-readable version:** [`governance.yaml`](governance.yaml) · [`governance.json`](governance.json) — agents should parse these first.
 > **Contract:** `ORG-DEV-OTOI-1.0.4` · **Maintained by** Joshua W. Dorsey, Sr. · **Governed by** the Solidarity Framework & HAIEF ([neurolift-technologies.github.io/haief](https://neurolift-technologies.github.io/haief/))
 
-These guidelines apply to all repositories in the **NeuroLift Technologies** organization unless a repository provides its own `CONTRIBUTING.md`. The agent-facing companion is [`AGENTS.md`](AGENTS.md); the principles behind it all are in [`GOVERNANCE.md`](GOVERNANCE.md).
+This is the governance standard for **all public repositories** in the **NeuroLift Technologies** organization. A repository may add stricter rules in its own `CONTRIBUTING.md`, but may not weaken this contract. The agent-facing companion is [`AGENTS.md`](AGENTS.md); the principles behind it all are in [`GOVERNANCE.md`](GOVERNANCE.md).
 
 ## In one minute
 
