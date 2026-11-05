@@ -28,7 +28,7 @@ This repository is the central configuration hub for the **NeuroLift Technologie
 **This repository is the governance standard for every public NeuroLift Technologies repository.** The contract in [`governance.yaml`](governance.yaml) / [`governance.json`](governance.json) (prose: [`CONTRIBUTING.md`](CONTRIBUTING.md), agents: [`AGENTS.md`](AGENTS.md), principles: [`GOVERNANCE.md`](GOVERNANCE.md)) is the baseline every public repo follows.
 
 - A public repo may add stricter, repo-specific rules in its own `CONTRIBUTING.md`, `AGENTS.md` or `CLAUDE.md` — it may not weaken the contract.
-- Public repos link here rather than copying the contract, so there is one source of truth.
+- Public repos should link to this contract rather than maintain a divergent copy, so there is one source of truth.
 - Internal repositories may layer additional rules on top of this baseline; internal tooling is not part of the public standard.
 
 ## What's in This Repository
