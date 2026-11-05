@@ -17,6 +17,9 @@ org-wide defaults for any public repository that does not define its own.
 - The org profile (`profile/README.md`) and a reusable CI workflow
   (`.github/workflows/reusable-ci.yml`)
 
+This repository is the **governance standard for all public NLT repositories**;
+public repos follow it and may only add stricter rules, never weaken it.
+
 This repository contains **no application code** — it is configuration and
 documentation only.
 

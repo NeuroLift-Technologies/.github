@@ -4,7 +4,7 @@
 ai_assistant_directive:
   priority: 1
   instruction: "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json)."
-  description: "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository."
+  description: "How We Govern — one shared contract for every contributor in any public NeuroLift Technologies repository."
   required_files: ["CONTRIBUTING.md", "governance.yaml", "governance.json"]
   document_id: "ORG-DEV-OTOI-1.0.4"
 ```
@@ -14,14 +14,22 @@ ai_assistant_directive:
   "ai_assistant_directive": {
     "priority": 1,
     "instruction": "Before contributing — human or agent — read CONTRIBUTING.md and parse governance.yaml (or governance.json).",
-    "description": "How We Govern — one shared contract for every contributor in any NeuroLift Technologies repository.",
+    "description": "How We Govern — one shared contract for every contributor in any public NeuroLift Technologies repository.",
     "required_files": ["CONTRIBUTING.md", "governance.yaml", "governance.json"],
     "document_id": "ORG-DEV-OTOI-1.0.4"
   }
 }
 ```
 
-This repository is the central configuration hub for all repositories in the **NeuroLift Technologies** GitHub organization. GitHub treats this repository specially, using its contents as organization-wide defaults.
+This repository is the central configuration hub for the **NeuroLift Technologies** GitHub organization. GitHub treats this repository specially, using its contents as organization-wide defaults.
+
+## Governance Standard for Public Repositories
+
+**This repository is the governance standard for every public NeuroLift Technologies repository.** The contract in [`governance.yaml`](governance.yaml) / [`governance.json`](governance.json) (prose: [`CONTRIBUTING.md`](CONTRIBUTING.md), agents: [`AGENTS.md`](AGENTS.md), principles: [`GOVERNANCE.md`](GOVERNANCE.md)) is the baseline every public repo follows.
+
+- A public repo may add stricter, repo-specific rules in its own `CONTRIBUTING.md`, `AGENTS.md` or `CLAUDE.md` — it may not weaken the contract.
+- Public repos link here rather than copying the contract, so there is one source of truth.
+- Internal repositories may layer additional rules on top of this baseline; internal tooling is not part of the public standard.
 
 ## What's in This Repository
 
